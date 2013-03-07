@@ -2,11 +2,46 @@ body{
 	background-color: rgb(240,240,240);
 }
 
+.center
+{
+	float: none;
+	margin: 0 auto;
+}
+
 .headerTitle{
 	min-height: 1px;
 	padding: 0 15px;
 	position: relative;
 	text-rendering: optimizeLegibility;
+}
+
+.soften{
+	background-color: black;
+}
+
+.info{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+.info-title{
+	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.info-number{
+	color: rgb(190, 190, 190);
+	font-family: 'Oswald', sans-serif;
+}
+
+.info-bar{
+	margin-top: 10px;
+	margin-left: -6px;
+}
+
+.logo{
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .text-left{
