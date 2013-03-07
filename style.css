@@ -1,0 +1,91 @@
+body{
+	background-color: rgb(240,240,240);
+}
+
+.headerTitle{
+	min-height: 1px;
+	padding: 0 15px;
+	position: relative;
+	text-rendering: optimizeLegibility;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.bold {
+font-weight: 400;
+}
+
+.yellow-bar
+{
+	background-color: rgb(232, 201, 44);
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Helvetica";
+	font-size: 25px;
+}
+
+.orange-bar{
+	background-color: rgb(212, 136, 14);
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Helvetica";
+	font-size: 25px;
+}
+
+.light-blue-bar{
+	background-color: rgb(154, 201, 238);
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Helvetica";
+	font-size: 25px;	
+}
+
+.vertical-spacer
+{
+	padding-top: 40px;
+}
+
+.green{
+	color: rgb(168, 191, 0);
+}
+
+.yellow{
+	color: rgb(232, 201, 44);
+}
+
+.orange{
+	color: rgb(212, 136, 14);
+}
+
+.light-blue{
+	color: rgb(154, 201, 238);
+}
+
+.dark-blue{
+	color: rgb(72, 138, 212);
+}
+
+.purple{
+	color: rgb(114, 122, 184);
+}
+
+h3{
+	font-family: 'Source Sans Pro', "Helvetica", Arial, sans-serif;
+	font-weight: 100;
+	font-size: 65px;
+	color: #444;
+	letter-spacing: -1px;
+	line-height: 1.1;
+	text-rendering: optimizeLegibility;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
