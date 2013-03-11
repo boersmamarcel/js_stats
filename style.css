@@ -27,6 +27,7 @@ body{
 .info-title{
 	font-size: 25px;
 	font-family: 'Oswald', sans-serif;
+	margin-top: 10px;
 }
 
 .info-number{
@@ -37,6 +38,36 @@ body{
 .info-bar{
 	margin-top: 10px;
 	margin-left: -6px;
+}
+
+.big-dot{
+	width: 30px;
+	height: 30px;
+	background-color: rgb(190,190, 190);
+	border-radius: 50%;
+	z-index: 5;
+	padding: 4px;
+}
+
+.small-dot{
+	width: 24px;
+	height: 24px;
+	background-color:  rgb(240,240,240);
+	border-radius:50%;
+	z-index: 10;
+	margin: 3px auto;
+}
+
+.dotted-line{
+	height: 200px;
+	width: 3px;
+	border-left: 5px dotted rgb(190,190,190);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.white{
+	background-color: white;
 }
 
 .logo{
@@ -54,6 +85,14 @@ body{
 
 .bold {
 font-weight: 400;
+}
+
+.small-link{
+	font-size: 15px;
+}
+
+.block-title{
+	margin-top: -35px;
 }
 
 .yellow-bar
