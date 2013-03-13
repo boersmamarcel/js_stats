@@ -176,3 +176,8 @@ line.link {
   stroke: #9ecae1;
   stroke-width: 1.5px;
 }
+
+.rounded-image{
+	border-radius: 50%;
+	height: 150px;
+}
