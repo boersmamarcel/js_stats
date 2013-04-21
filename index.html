@@ -1,84 +1,399 @@
 <!DOCTYPE html>
-<html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Javascript analytics : Javascript stats" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Javascript analytics</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/boersmamarcel/js_stats">View on GitHub</a>
-
-          <h1 id="project_title">Javascript analytics</h1>
-          <h2 id="project_tagline">Javascript stats</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/boersmamarcel/js_stats/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/boersmamarcel/js_stats/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>untitled</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Marcel Boersma">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900,700italic,900italic" rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<script src='boostrap.js'></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+      <a href="https://github.com/norvigaward/naward18"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+      <div class='headerTitle span6 text-left center' >
+         <h3>Stats and figures from <span class="bold green">1 billion</span> webpages</h3>
+      </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+  <div class="row vertical-spacer">
+    <div class='info span3 center'>
+        <div class='info-title'>
+          Pages scanned
+          <span class='info-number'>1.07B</span>
+        </div>
+        <div class='info-bar'>
+          <img src='bluebar.png'/>
+        </div>
     </div>
+     <div class='info span3 center'>
+          <div class='info-title'>
+            Successful
+            <span class='info-number'>900M</span>
+          </div>
+          <div class='info-bar'>
+            <img src='greenbar.png'/>
+          </div>
+      </div>
+      <div class='info span3 center'>
+           <div class='info-title'>
+             Failure
+             <span class='info-number'>1M</span>
+           </div>
+           <div class='info-bar'>
+             <img src='orangebar.png'/>
+           </div>
+       </div>
+  </div>
+</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Javascript analytics maintained by <a href="https://github.com/boersmamarcel">boersmamarcel</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+  <div class='row vertical-spacer white'>
+    <div class='headerTitle span3 center'>
+      <h3>Thanks to </h3>
     </div>
+  </div>
+  <div class='row white'>
+    <div class='span9 center'>
+      <div class='logos'>
+          <span id='commoncrawl' class='logo'><a href="http://commoncrawl.org/" target="_blank"><img src='commoncrawl.png' /></a></span><span id='surfsara' class='logo'><a href="https://www.surfsara.nl/nl" target="_blank"><img src='surfsara.png' /></a></span>
+      </div>
+    </div>
+  </div>
+    <div class='row vertical-spacer white'></div>
+<div class="container">
+  <div class="row">
+    <div class="headerTitle span7 offset2 text-right vertical-spacer">
+      <h3>Hottest <span class="bold green">frameworks</span> on the internet</h3>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center vertical-spacer'>
+      <div class='span3 left-block'>
+        <div class='block-title'><h3> <span class="bold green">jQuery</span></h3></div>
+        <div class='block-description'>
+            <div class='info-bar'>
+              <img src='bluebar.png'/>
+            </div>
+            <div class='info-title'>
+              <span class='info-number'>332M</span> <a href='http://jquery.com/' target='_blank' class='small-link orange'>visit site</a>
+            </div>
+        </div>
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
+      
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
+        
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
+        <div class='block-title'><h3> <span class="bold green">Swfobject</span></h3></div>
+        <div class='block-description'><div class='info-bar'>
+          <img src='bluebar.png'/>
+        </div>
+        <div class='info-title'>
+          <span class='info-number'>74M</span> <a href='https://code.google.com/p/swfobject/' target='_blank' class='small-link orange'>visit site</a>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
+         <div class='block-title'><h3> <span class="bold green">Prototype</span></h3></div>
+          <div class='block-description'><div class='info-bar'>
+            <img src='bluebar.png'/>
+          </div>
+          <div class='info-title'>
+            <span class='info-number'>52M</span> <a href='http://prototypejs.org/' target='_blank' class='small-link orange'>visit site</a>
+          </div></div>
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
+       
+      </div>
+    </div>
+  </div>
+  
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
+        
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
+         <div class='block-title'><h3> <span class="bold green">jQuery-UI</span></h3></div>
+          <div class='block-description'><div class='info-bar'>
+            <img src='bluebar.png'/>
+          </div>
+          <div class='info-title'>
+            <span class='info-number'>39M</span> <a href='http://jqueryui.com/' target='_blank' class='small-link orange'>visit site</a>
+          </div></div>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
+        <div class='block-title'><h3> <span class="bold green">Mootools</span></h3></div>
+          <div class='block-description'><div class='info-bar'>
+            <img src='bluebar.png'/>
+          </div>
+          <div class='info-title'>
+            <span class='info-number'>30M</span> <a href='http://mootools.net/' target='_blank' class='small-link orange'>visit site</a>
+          </div></div>
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
+         
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
+        
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
+         <div class='block-title'><h3> <span class="bold green">Scriptaculous</span></h3></div>
+           <div class='block-description'><div class='info-bar'>
+             <img src='bluebar.png'/>
+           </div>
+           <div class='info-title'>
+             <span class='info-number'>26M</span> <a href='http://script.aculo.us/' target='_blank' class='small-link orange'>visit site</a>
+           </div></div>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
+        <div class='block-title'><h3> <span class="bold green">L10n</span></h3></div>
+          <div class='block-description'><div class='info-bar'>
+            <img src='bluebar.png'/>
+          </div>
+          <div class='info-title'>
+            <span class='info-number'>24M</span> <a href='https://github.com/eligrey/l10n.js/' target='_blank' class='small-link orange'>visit site</a>
+          </div></div>
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-40311580-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
 
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
+        <div class='block-title'><h3> <span class="bold green">Lightbox</span></h3></div>
+          <div class='block-description'><div class='info-bar'>
+            <img src='bluebar.png'/>
+          </div>
+          <div class='info-title'>
+            <span class='info-number'>24M</span> <a href='http://lokeshdhakar.com/projects/lightbox/' target='_blank' class='small-link orange'>visit site</a>
+          </div></div>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
+        <div class='block-title'><h3> <span class="bold green">jQuery fancybox</span></h3></div>
+          <div class='block-description'><div class='info-bar'>
+            <img src='bluebar.png'/>
+          </div>
+          <div class='info-title'>
+            <span class='info-number'>17M</span> <a href='http://fancybox.net/' target='_blank' class='small-link orange'>visit site</a>
+          </div></div>
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+        <div class='dotted-line center'></div>
+      </div>
+      <div class='span3 right-block'>
 
-  </body>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span8 center'>
+      <div class='span3 left-block'>
+        
+      </div>
+      <div class='span1 dots'>
+        <div class='big-dot center'><div class='small-dot'></div></div>
+      </div>
+      <div class='span3 right-block'>
+        <div class='block-title'><h3> <span class="bold green">Superfish</span></h3></div>
+          <div class='block-description'><div class='info-bar'>
+            <img src='bluebar.png'/>
+          </div>
+          <div class='info-title'>
+            <span class='info-number'>16M</span> <a href='http://users.tpg.com.au/j_birch/plugins/superfish/' target='_blank' class='small-link orange'>visit site</a>
+          </div></div>
+      </div>
+    </div>
+  </div>
+    <div class='row vertical-spacer'></div>
+</div>
+
+  <div class="row vertical-spacer white">
+    <div class="headerTitle span8 offset4">
+      <h3>The hottest <span class="bold green">hubs</span> of the internet</h3>
+    </div>
+  </div>
+  <div class="row vertical-spacer white">
+    <div class="span8 center" id="graph">
+      
+    </div>
+  </div>
+  
+  <div class="row vertical-spacer">
+    <div class="headerTitle span6 offset2 center">
+      <h3>Thanks to <span class="bold green">the nerds</span></h3>
+    </div>
+  </div>
+  <div class="row vertical-spacer">
+      <div class='span11 center'>
+        <span class='span2'>
+          <img src='ties.png' class='rounded-image' />
+        </span>
+        <span class='span3'><h2><span class="bold green">Ties de Kock</a></h2></span>
+        <span class='span2'>
+          <img src='marcel.png' class='rounded-image' />
+        </span>
+        <span class='span3'><h2><span class="bold green">Marcel Boersma</a></h2>
+          <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+          <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/marcelboersma" data-format="hover" data-text="Marcel Boersma"></script>
+        </span>
+      </div>
+  </div>
+  <div class='row vertical-spacer'>
+      <div class="span3 center"> linkedin | twitter | google+ share</div>
+    </div>
+  </div>
+  <div class='row vertical-spacer'></div>
+  </div>
+</body>
+<script type='text/javascript'>
+var w = 960,
+    h = 800,
+    r = 700,
+    x = d3.scale.linear().range([0, r]),
+    y = d3.scale.linear().range([0, r]),
+    node,
+    root;
+
+var pack = d3.layout.pack()
+    .size([r, r])
+    .value(function(d) { return d.size; })
+
+var vis = d3.select("#graph").insert("svg:svg", "h2")
+    .attr("width", w)
+    .attr("height", h)
+  .append("svg:g")
+    .attr("transform", "translate(" + (w - r) / 2 + "," + (h - r) / 2 + ")");
+
+d3.json("hubs.json", function(data) {
+  node = root = data;
+
+  var nodes = pack.nodes(root);
+
+  vis.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("class", function(d) { return d.children ? "parent" : "child"; })
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", function(d) { return d.r; })
+      .on("click", function(d) { return zoom(node == d ? root : d); });
+
+  vis.selectAll("text")
+      .data(nodes)
+    .enter().append("svg:text")
+      .attr("class", function(d) { return d.children ? "parent" : "child"; })
+      .attr("x", function(d) { return d.x; })
+      .attr("y", function(d) { return d.y; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .style("opacity", function(d) { return d.r > 20 ? 1 : 0; })
+      .text(function(d) { return d.name; });
+
+  d3.select(window).on("click", function() { zoom(root); });
+});
+
+function zoom(d, i) {
+  var k = r / d.r / 2;
+  x.domain([d.x - d.r, d.x + d.r]);
+  y.domain([d.y - d.r, d.y + d.r]);
+
+  var t = vis.transition()
+      .duration(d3.event.altKey ? 7500 : 750);
+
+  t.selectAll("circle")
+      .attr("cx", function(d) { return x(d.x); })
+      .attr("cy", function(d) { return y(d.y); })
+      .attr("r", function(d) { return k * d.r; });
+
+  t.selectAll("text")
+      .attr("x", function(d) { return x(d.x); })
+      .attr("y", function(d) { return y(d.y); })
+      .style("opacity", function(d) { return k * d.r > 20 ? 1 : 0; });
+
+  node = d;
+  d3.event.stopPropagation();
+}
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40311580-1', 'github.io');
+  ga('send', 'pageview');
+
+</script>
 </html>

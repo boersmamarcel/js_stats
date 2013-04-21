@@ -1,0 +1,31 @@
+
+{
+ "name": "Internet (982M)",
+ "children": [
+  {
+   "name": "Google (712M)", "size" : 725800,
+   "children": [
+    {"name": "pagead2.googlesyndication.com (412M)", "size" : 579100},
+    {"name": "ajax.googleapis.com (98M)", "size": 138800},
+    {"name": "www.google-analytics.com (72M)", "size": 101100}, 
+    {"name": "www.google.com (64M)", "size": 90900},
+    {"name": "apis.google.com (64M)", "size": 89800}
+   ]
+  },
+  {
+    "name" : "s7.addthis.com (74M)", "size": 75500
+  },
+  {
+    "name" : "platform.twitter.com (60M)", "size": 61500
+  },
+  {
+    "name" : "s.ytimg.com (35M)", "size" : 36500
+  },
+  {
+    "name" : "l.yimg.com (58M)", "size" : 59800
+  },
+  {
+    "name" : "connect.facebook.net (39M)" , "size" : 40600
+  }
+ ]
+}
